@@ -8,31 +8,39 @@ can do lives there, behind sign-in.
 This repository is generated. Do not edit it by hand: changes are overwritten
 on the next publish.
 
-## Install
+## Sign-in
 
-You need an access key. It is handed to you in person; the app asks for it
-once, at sign-in.
+You sign in with your Bedbank Slack account; the assistant then acts in Slack
+as you. Your account must be enrolled first — if the sign-in page says it is
+not, ask the administrator.
 
-### ChatGPT (desktop)
+## ChatGPT
 
-1. In Terminal, run:
+Plugins run in ChatGPT's **Work** tab. Two ways to install:
 
-   ```sh
-   curl -fsSL https://raw.githubusercontent.com/bedbankcode/assistant-plugin/main/install.sh | sh
-   ```
+**A. From this marketplace** — in Terminal:
 
-   It writes one file, `~/.agents/plugins/marketplace.json`, that tells
-   ChatGPT where the plugin is.
-2. Restart ChatGPT, open **Plugins**, find **Bedbank Assistant** under
-   Bedbank Global and install it.
-3. When asked to sign in, paste your access key.
-4. Start a new chat.
+```sh
+curl -fsSL https://raw.githubusercontent.com/bedbankcode/assistant-plugin/main/install.sh | sh
+```
 
-### Claude Desktop
+Restart ChatGPT → **Plugins** → Bedbank Global → install **Bedbank
+Assistant** → Continue with Slack. Then open the **Work** tab, start a chat and
+type `@Bedbank Assistant …`.
 
-Settings → Connectors → Add custom connector → URL
-`https://agent.bedbankglobal.com/mcp`. Sign in with your access key when
-prompted.
+**B. Directly from the gateway** — Settings → Security and login → turn on
+**Developer mode** → **Plugins** → **+** → MCP server URL
+`https://agent.bedbankglobal.com/mcp` → create → install → Continue with Slack.
+
+## Claude (Desktop, claude.ai, Cowork)
+
+**A. As a connector** (simplest): **Customize → Connectors → + → Add custom
+connector** → URL `https://agent.bedbankglobal.com/mcp` → Add → Continue with
+Slack. In a chat, open **+ → Connectors** and switch Bedbank Assistant on.
+
+**B. As a plugin**: download
+[`bedbank-assistant.zip`](https://github.com/bedbankcode/assistant-plugin/raw/main/bedbank-assistant.zip),
+then **Customize → Plugins → upload a custom plugin** and choose the file.
 
 ### Claude Code
 

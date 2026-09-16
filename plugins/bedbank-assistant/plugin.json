@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "bedbank-assistant",
-  "version": "1.0.47",
+  "version": "1.0.59",
   "description": "Personal assistant for Bedbank Global executives: reports, takes actions and keeps you informed through the company gateway.",
   "homepage": "https://agent.bedbankglobal.com",
   "keywords": [
