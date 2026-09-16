@@ -1,0 +1,20 @@
+{
+  "name": "bedbank",
+  "interface": {
+    "displayName": "Bedbank Global"
+  },
+  "plugins": [
+    {
+      "name": "bedbank-assistant",
+      "source": {
+        "source": "local",
+        "path": "./plugins/bedbank-assistant"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

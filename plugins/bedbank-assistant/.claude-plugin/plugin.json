@@ -1,0 +1,8 @@
+{
+  "name": "bedbank-assistant",
+  "version": "1.0.46",
+  "description": "Personal assistant for Bedbank Global executives: reports, takes actions and keeps you informed through the company gateway.",
+  "author": { "name": "Bedbank Global" },
+  "homepage": "https://agent.bedbankglobal.com",
+  "keywords": ["bedbank", "assistant", "executive"]
+}

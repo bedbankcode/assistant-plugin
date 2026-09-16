@@ -1,0 +1,22 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "bedbank-assistant",
+  "version": "1.0.46",
+  "description": "Personal assistant for Bedbank Global executives: reports, takes actions and keeps you informed through the company gateway.",
+  "homepage": "https://agent.bedbankglobal.com",
+  "keywords": ["bedbank", "assistant", "executive"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Bedbank Assistant",
+        "shortDescription": "Your Bedbank Global personal assistant.",
+        "longDescription": "Reports, takes actions and keeps you informed through the Bedbank Global gateway. Sign in once with the access key you were handed; the assistant then acts for you with your own permissions.",
+        "category": "Productivity",
+        "capabilities": ["Read", "Write"],
+        "websiteURL": "https://agent.bedbankglobal.com",
+        "brandColor": "#0B3D91",
+        "defaultPrompt": ["Give me my morning briefing"]
+      }
+    }
+  }
+}

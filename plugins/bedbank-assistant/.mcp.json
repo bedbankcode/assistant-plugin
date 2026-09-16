@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "bedbank-assistant": {
+      "type": "http",
+      "url": "https://agent.bedbankglobal.com/mcp"
+    }
+  }
+}

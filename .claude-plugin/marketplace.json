@@ -1,0 +1,15 @@
+{
+  "name": "bedbank",
+  "owner": { "name": "Bedbank Global" },
+  "metadata": {
+    "description": "Bedbank Global plugins for Claude Code and Claude Desktop."
+  },
+  "plugins": [
+    {
+      "name": "bedbank-assistant",
+      "source": "./plugins/bedbank-assistant",
+      "description": "Personal assistant for Bedbank Global executives: reports, takes actions and keeps you informed through the company gateway.",
+      "category": "productivity"
+    }
+  ]
+}
