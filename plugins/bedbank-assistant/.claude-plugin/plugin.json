@@ -1,7 +1,7 @@
 {
   "name": "bedbank-assistant",
   "displayName": "Bedbank Assistant",
-  "version": "1.0.59",
+  "version": "1.0.77",
   "description": "Personal assistant for Bedbank Global executives: reports, takes actions and keeps you informed through the company gateway.",
   "author": {
     "name": "Bedbank Global"

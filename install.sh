@@ -1,7 +1,7 @@
 #!/bin/sh
 # Registers the Bedbank Global plugin marketplace with the ChatGPT desktop app
 # on this Mac. Run once, then restart ChatGPT and install "Bedbank Assistant"
-# from the Plugins tab. Sign in with the access key you were handed.
+# from the Plugins tab. Sign in with your Bedbank Slack account.
 set -eu
 
 file="$HOME/.agents/plugins/marketplace.json"
@@ -46,4 +46,6 @@ cat >"$file" <<EOF
 }
 EOF
 echo "Registered the Bedbank Global marketplace in $file."
-echo "Restart ChatGPT, open Plugins, install Bedbank Assistant, and sign in with your access key."
+echo "Restart ChatGPT, open Plugins, install Bedbank Assistant, and sign in with your Slack account."
+echo "Then connect the companions the assistant uses: Outlook Email + Outlook Calendar (Settings > Connectors),"
+echo "web search (Tools > Search the web), and Google Maps (Settings > Apps). The assistant will remind you if one is missing."

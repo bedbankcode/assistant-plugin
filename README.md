@@ -8,6 +8,18 @@ can do lives there, behind sign-in.
 This repository is generated. Do not edit it by hand: changes are overwritten
 on the next publish.
 
+## What else you need in your app
+
+The assistant uses tools that live in your own ChatGPT or Claude, not on
+the gateway. Install these once; the assistant checks for them and tells
+you what is missing:
+
+| Companion | Unlocks | ChatGPT | Claude Desktop |
+| --- | --- | --- | --- |
+| **Outlook mail & calendar** | inbox triage, drafting and sending email, meeting prep, booking meetings | Settings → Connectors → Outlook Email, Outlook Calendar (company Microsoft 365 account), then enable in the chat (+ → Connectors) | Customize → Connectors → Microsoft 365 (Outlook), then switch on in the chat |
+| **Web search** | news, competitor rates, weather, registries | built in — enable "Search the web" for the chat | built in — Settings → Features → Web search |
+| **Google Maps** | travel times, addresses, where the cars are | Settings → Apps → Google Maps (or web search) | Customize → Connectors → Google Maps |
+
 ## Sign-in
 
 You sign in with your Bedbank Slack account; the assistant then acts in Slack
