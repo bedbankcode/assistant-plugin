@@ -1,6 +1,8 @@
 {
   "name": "bedbank",
-  "owner": { "name": "Bedbank Global" },
+  "owner": {
+    "name": "Bedbank Global"
+  },
   "metadata": {
     "description": "Bedbank Global plugins for Claude Code and Claude Desktop."
   },
@@ -8,7 +10,7 @@
     {
       "name": "bedbank-assistant",
       "source": "./plugins/bedbank-assistant",
-      "description": "Personal assistant for Bedbank Global executives: reports, takes actions and keeps you informed through the company gateway.",
+      "description": "Bedbank Global's personal assistant for executives. Ask it, in Turkish or English, about bookings, revenue and margin, booking pace, receivables and collections, payables, cash and the 13-week forecast, bank statements, e-invoices, Slack digests and tasks, who owes you what, decisions, fleet, exchange rates; it delivers spreadsheets and briefs you every morning. Rezervasyon, ciro, nakit, alacak, tahsilat, ödeme, e-Fatura, Slack, görev, brifing.",
       "category": "productivity"
     }
   ]

@@ -1,20 +1,47 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "bedbank-assistant",
-  "version": "1.0.78",
-  "description": "Personal assistant for Bedbank Global executives: reports, takes actions and keeps you informed through the company gateway.",
+  "version": "1.0.93",
+  "description": "Bedbank Global's personal assistant for executives. Ask it, in Turkish or English, about bookings, revenue and margin, booking pace, receivables and collections, payables, cash and the 13-week forecast, bank statements, e-invoices, Slack digests and tasks, who owes you what, decisions, fleet, exchange rates; it delivers spreadsheets and briefs you every morning. Rezervasyon, ciro, nakit, alacak, tahsilat, ödeme, e-Fatura, Slack, görev, brifing.",
   "homepage": "https://agent.bedbankglobal.com",
   "keywords": [
     "bedbank",
     "assistant",
-    "executive"
+    "executive",
+    "kişisel asistan",
+    "brifing",
+    "briefing",
+    "rezervasyon",
+    "bookings",
+    "nakit",
+    "cash",
+    "alacak",
+    "receivables",
+    "tahsilat",
+    "collections",
+    "ödeme",
+    "payables",
+    "e-fatura",
+    "abacus",
+    "slack",
+    "görev",
+    "tasks",
+    "juniper",
+    "trixpo",
+    "rapor",
+    "report",
+    "WBR",
+    "kur",
+    "exchange rates",
+    "fleet",
+    "araç"
   ],
   "extensions": {
     "com.openai": {
       "interface": {
         "displayName": "Bedbank Assistant",
-        "shortDescription": "Your Bedbank Global personal assistant.",
-        "longDescription": "Reports, takes actions and keeps you informed through the Bedbank Global gateway. Sign in once with your Bedbank Slack account; the assistant then acts for you with your own permissions. Connect your email and calendar (Outlook or Google), web search and Google Maps in your app to unlock inbox triage, meeting prep and market checks. It remembers you between conversations.",
+        "shortDescription": "Your Bedbank Global personal assistant: bookings, cash, receivables, Slack, tasks, briefings.",
+        "longDescription": "Your Kişisel Asistan for Bedbank Global. It answers from the company's own data (Juniper bookings, Trixpo accounting, the live bank feed, Abacus e-invoices, Slack, GitHub, the fleet) and acts as you in Slack after your yes. Ask for the morning briefing, the weekly business review, why revenue moved, how November is booking, who owes us and who we owe, the 13-week cash forecast, what needs action today, or a spreadsheet of any of it. It records your promises and decisions, remembers you between conversations, and DMs you when an alert you set fires. Sign in once with your Bedbank Slack account; connect your email and calendar (Outlook or Google), web search and Google Maps in ChatGPT to unlock inbox triage, meeting prep and market checks. Türkçe veya İngilizce sorabilirsiniz.",
         "category": "Productivity",
         "capabilities": [
           "Read",
@@ -23,7 +50,12 @@
         "websiteURL": "https://agent.bedbankglobal.com",
         "brandColor": "#B5175B",
         "defaultPrompt": [
-          "Give me my morning briefing"
+          "Give me my morning briefing",
+          "Bu sabahki brifingimi ver",
+          "How is November looking?",
+          "Who owes us the most and how overdue?",
+          "Why did revenue drop last week?",
+          "What am I waiting on?"
         ],
         "logo": "./assets/logo.png",
         "composerIcon": "./assets/logo.png"

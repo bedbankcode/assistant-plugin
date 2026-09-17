@@ -25,6 +25,61 @@ The assistant remembers you between conversations — your preferences, what
 you asked for, what is still open — so you never have to repeat yourself.
 Say "forget that" and it does.
 
+## Make it your default in ChatGPT
+
+Five settings turn the assistant from something you @-mention into the first
+thing ChatGPT reaches for.
+
+1. **Custom instructions** (Settings → Personalization → Custom instructions).
+   They apply to every chat. Under *What would you like ChatGPT to know
+   about you*, paste and adjust:
+
+   > Ben [ad soyad], Bedbank Global [unvan]. Şirketle ilgili her konuda
+   > (rezervasyonlar, nakit, alacaklar, ödemeler, Slack, görevler, tedarikçiler,
+   > müşteriler, raporlar) önce Bedbank Assistant eklentisini kullan: sohbetin
+   > başında get_my_context çağır, döndürdüğü persona ve talimatlara uy; şirket
+   > verisi için kendi bilgin yerine eklentinin araçlarını kullan ve sayıları
+   > oradan al. Rutin bir istek için önce list_skills ile uygun beceriyi bul ve
+   > onu izle. Bana "[Ad] Bey/Hanım" diye, "siz" ile hitap et. Kısa cevap ver;
+   > ayrıntıyı istediğimde ver. Bir şeyi değiştirmeden (mesaj, görev, dosya)
+   > önce tek satırla onay al.
+
+   In English:
+
+   > I am [name], [title] at Bedbank Global. For anything about the company
+   > (bookings, cash, receivables, payables, Slack, tasks, suppliers, customers,
+   > reports) use the Bedbank Assistant plugin first: call get_my_context at
+   > the start of the conversation and follow the persona and instructions it
+   > returns; take company numbers from its tools, never from your own
+   > knowledge. For a routine request, find the matching skill with
+   > list_skills and follow it. Address me formally. Answer briefly; give
+   > detail when I ask. Confirm in one line before changing anything.
+
+   Under *How would you like ChatGPT to respond*: "Follow the Bedbank
+   Assistant persona: warm, professional, direct; bold labels and short
+   bullets; no emoji."
+
+2. **Plugin permissions** (Settings → Plugins → Bedbank Assistant): choose
+   *Allow low-risk actions*. Reports then run without a confirmation each
+   time; anything that changes something still asks.
+
+3. **A "Bedbank" project**, pinned. Put the same instructions in the
+   project's instructions (there is room for the full persona there),
+   enable the plugin for the project, and work inside it. Project memory
+   carries context across every chat in it.
+
+4. **Scheduled tasks** in that project: "Every weekday at 07:30, run the
+   morning-briefing skill from Bedbank Assistant" and "Every Monday at
+   08:00, the weekly-business-review". The briefing then arrives by
+   notification before you ask.
+
+5. **Say it once**: in any chat, "Always use Bedbank Assistant for company
+   questions." ChatGPT keeps it as a memory and reinforces the instruction.
+
+Workspace admins on Business or Enterprise can enable the plugin for
+everyone under Workspace settings → Apps, with role access and action
+confirmation set centrally.
+
 ## Sign-in
 
 You sign in with your Bedbank Slack account; the assistant then acts in Slack

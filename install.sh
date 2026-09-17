@@ -12,7 +12,30 @@ if [ -f "$file" ]; then
     echo "Already registered: $file"
     exit 0
   fi
-  echo "A personal marketplace already exists at $file." >&2
+  # Another marketplace is registered: add our plugin to its list.
+  if command -v python3 >/dev/null 2>&1; then
+    cp "$file" "$file.bak"
+    REPO="$repo" python3 - "$file" <<'PY'
+import json, os, sys
+path = sys.argv[1]
+with open(path, encoding="utf-8") as f:
+    data = json.load(f)
+plugins = data.setdefault("plugins", [])
+plugins.append({
+    "name": "bedbank-assistant",
+    "source": {"source": "git-subdir", "url": os.environ["REPO"], "path": "./plugins/bedbank-assistant", "ref": "main"},
+    "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"},
+    "category": "Productivity",
+})
+with open(path, "w", encoding="utf-8") as f:
+    json.dump(data, f, indent=2, ensure_ascii=False)
+    f.write("\n")
+PY
+    echo "Added Bedbank Assistant to the existing marketplace at $file (backup in $file.bak)."
+    echo "Restart ChatGPT, open Plugins, install Bedbank Assistant, and sign in with your Slack account."
+    exit 0
+  fi
+  echo "A personal marketplace already exists at $file and python3 is not available to merge into it." >&2
   echo "Add this entry to its \"plugins\" list, then restart ChatGPT:" >&2
   cat >&2 <<EOF
 {
