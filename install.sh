@@ -47,5 +47,5 @@ cat >"$file" <<EOF
 EOF
 echo "Registered the Bedbank Global marketplace in $file."
 echo "Restart ChatGPT, open Plugins, install Bedbank Assistant, and sign in with your Slack account."
-echo "Then connect the companions the assistant uses: Outlook Email + Outlook Calendar (Settings > Connectors),"
+echo "Then connect the companions the assistant uses: your email and calendar (Outlook or Google, Settings > Connectors),"
 echo "web search (Tools > Search the web), and Google Maps (Settings > Apps). The assistant will remind you if one is missing."

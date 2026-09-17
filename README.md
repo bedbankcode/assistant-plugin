@@ -16,9 +16,14 @@ you what is missing:
 
 | Companion | Unlocks | ChatGPT | Claude Desktop |
 | --- | --- | --- | --- |
-| **Outlook mail & calendar** | inbox triage, drafting and sending email, meeting prep, booking meetings | Settings → Connectors → Outlook Email, Outlook Calendar (company Microsoft 365 account), then enable in the chat (+ → Connectors) | Customize → Connectors → Microsoft 365 (Outlook), then switch on in the chat |
+| **Email** — Outlook or Gmail, your choice | inbox triage, drafting and sending email | Settings → Connectors → Outlook Email or Gmail, then enable in the chat (+ → Connectors) | Customize → Connectors → Microsoft 365 (Outlook) or Gmail, then switch on in the chat |
+| **Calendar** — Outlook or Google, your choice | today's meetings, meeting prep, booking meetings | Settings → Connectors → Outlook Calendar or Google Calendar | Customize → Connectors → Microsoft 365 or Google Calendar |
 | **Web search** | news, competitor rates, weather, registries | built in — enable "Search the web" for the chat | built in — Settings → Features → Web search |
 | **Google Maps** | travel times, addresses, where the cars are | Settings → Apps → Google Maps (or web search) | Customize → Connectors → Google Maps |
+
+The assistant remembers you between conversations — your preferences, what
+you asked for, what is still open — so you never have to repeat yourself.
+Say "forget that" and it does.
 
 ## Sign-in
 
